@@ -4,4 +4,4 @@ body       { background-color: lightgrey; }
 .cell      { color: blue; background-color: white; width: 100px; height: 100px; margin: 10px; padding: 10px; float: left; }
 .cross     { background: url("/images/cross.gif") no-repeat; background-size: cover; }
 .circle    { background: url("/images/circle.gif") no-repeat; background-size: cover;}
-.message   {color: white; background-color: blue; clear: both; }
+.message   {color: white; background-color: blue; clear: both; text-align:center; }

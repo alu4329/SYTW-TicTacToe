@@ -1,20 +1,20 @@
 .barra-superior{align: "center"}
-  %h1 Jueguemos al ¡Tic Tac Toe!
+  %h1 P8 SYTW : ¡¡Tres en Raya!!
   -if (!usuario)
-    %form{:action=>"/",:method=>"post"}
-      Nombre para iniciar Sesión.
-      %input{:type=>"text",:name=>"usuario[username]",:placeholder=>"usuario"}
+    %form{:action=>"/",:method=>"post"}   
+      %input{:type=>"text",:name=>"usuario[username]",:placeholder=>"Inserte Username"}
       %input{:type=>"hidden",:name=>"usuario[partidas_ganadas]",:value=>"0"}
       %input{:type=>"hidden",:name=>"usuario[partidas_perdidas]",:value=>"0"}
-      %input{:type=>"submit",:value=>"Iniciar"}
+      %input{:type=>"submit",:value=>"Let's Play!"}
   -else
     %form{:action=>"/",:method=>"post"}
       Bienvenido, #{usuario}
       %input{:type=>"hidden",:value=>"1",:name=>"logout"}
-      %input{:type=>"submit",:value=>"logout"}
+      %input{:type=>"submit",:value=>"Salir"}
   %br
-  %a{:href=>"/usuarios"}
-    Ver estadísticas
+  %h2
+    %a{:href=>"/usuarios"}
+      Consultar las estadísticas de otros usuarios
   %br
   %br
 .screen

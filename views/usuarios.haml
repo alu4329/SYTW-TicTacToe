@@ -1,18 +1,21 @@
-.message
+.message{align: "center"}
+  %h1 ESTADÍSTICAS DE USUARIOS
   .tabla
-    %table
+    %table 
       %tr
-        %th RANKING TICTACTOE
-      %tr
-        %th Nick
+        %th Usuarios
+        %th 
         %th Ganadas
+        %th 
         %th Perdidas
       - @usuarios.sort_by {|k, v| v}.reverse.each do |usuario|
         %tr
           %td
             #{usuario.username}
+          %td 
           %td
             #{usuario.partidas_ganadas}
+          %td 
           %td
             #{usuario.partidas_perdidas}
   .volver

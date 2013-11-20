@@ -33,9 +33,19 @@ body {
   background-size: cover; }
 
 .base-font, .message {
-  color: #f9a7b0;
+  color: #330066;
   font: 22px Helvetica, Arial, sans-serif; }
 
 .message {
   display: inline;
-  background-color: transparent; }
+  background-color: transparent;}
+
+.tabla {
+  display: block;
+  margin-left: 23.5em;
+  background: url("/images/transparente.png") no-repeat; 
+  text-align:center;
+  color: #3399FF;}
+
+.volver {
+  margin-top: 2em;}

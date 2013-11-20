@@ -175,7 +175,7 @@ get '/humanwins' do
         pp un_usuario
         p "---------"
       end
-      'Human wins'
+      'Has Ganado'
     else
       redirect '/'
     end
@@ -198,7 +198,7 @@ get '/computerwins' do
         un_usuario.partidas_perdidas = contador
         un_usuario.save
       end
-      'Computer wins'
+      'Has Perdido'
     else
       redirect '/'
     end
@@ -226,7 +226,7 @@ post '/' do
       @usuario = Ejem["username"]
       session["usuario"] = @usuario
     else
-      p "Ya existe un usuario con ese nick!"
+      p "El usuario ya está registrado, seleccione otro Username"
       @usuario = nil
       session["usuario"] = nil
       session.clear

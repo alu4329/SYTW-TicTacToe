@@ -2,7 +2,7 @@ $red: #903;
 $black: #444;
 $white: #fff;
 $ull: #9900FF;
-$pink: #F9A7B0;
+$default: #330066;
 
 $main-font: Helvetica, Arial, sans-serif;
 $message-font: 22px/1;
@@ -47,6 +47,7 @@ body {
              float: left;
            }
 
+
 @mixin game-piece($image) {
   background: url($image) no-repeat; background-size: cover;
 }
@@ -54,7 +55,7 @@ body {
 .cross { @include game-piece($cross); }
 .circle { @include game-piece($circle); }
 
-.base-font { color: $pink; font: $message-font $main-font; }
+.base-font { color: $default; font: $message-font $main-font; }
 
 .message {
              @extend .base-font;
