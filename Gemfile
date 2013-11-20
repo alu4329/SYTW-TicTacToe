@@ -4,7 +4,7 @@ gem "sinatra"
 gem 'haml'
 gem "sass", :require => 'sass'
 gem 'thin'
-#gem 'sqlite3'
+gem 'heroku'
 gem "dm-core"
 gem "dm-migrations"
 gem "pg", :group => :production
